@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>VPaint</title>
+        
+        <link rel="stylesheet" href="./dist/output.css">
+        
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="hero"></div>
+        <div id="services"></div>
+        <div id="statement"></div>
+        <div id="ourWork"></div>
+        <div id="costCalculation"></div>
+        <div id="whyUs"></div>
+        <div id="contact"></div>
+        <div id="footer"></div>
+        <script>
+            const components = [
+                { name: "header", elementId: "header"},
+                { name: "hero", elementId: "hero"},
+                { name: "services", elementId: "services"},
+                { name: "statement", elementId: "statement"},
+                { name: "ourWork", elementId: "ourWork"},
+                { name: "costCalculation", elementId: "costCalculation"},
+                { name: "whyUs", elementId: "whyUs"},
+                { name: "contact", elementId: "contact"},
+                { name: "footer", elementId: "footer"},
+            ];
+            fetchComponents(components);
+        </script>
+    </body>
+</html>
