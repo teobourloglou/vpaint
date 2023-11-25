@@ -1,53 +1,62 @@
-<header class="bg-white">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+<header x-data="{ open: false }" class="absolute inset-x-0 top-0 z-50 bg-transparent">
+    <nav class="flex items-center justify-between px-6 py-3 mx-auto max-w-7xl lg:px-8" aria-label="Global">
       <a href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">Your Company</span>
-        <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+        <img class="w-auto h-16" src="./media/logo.png" alt="">
       </a>
       <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <button type="button" @click="open = true" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
           <span class="sr-only">Open main menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
+          
         </button>
       </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+      <div class="hidden lg:flex lg:items-center lg:gap-x-12">
+        <a href="#services" class="text-sm font-semibold leading-6 text-gray-300">Υπηρεσίες</a>
+        <a href="#statement" class="text-sm font-semibold leading-6 text-gray-300">Σκοπός</a>
+        <a href="#ourWork" class="text-sm font-semibold leading-6 text-gray-300">Έργα</a>
+        <a href="#costCalculation" class="text-sm font-semibold leading-6 text-gray-300">Εκτίμηση κόστους</a>
+        <a href="#whyUs" class="text-sm font-semibold leading-6 text-gray-300">Γιατί εμάς</a>
+        <a href="#contact" class="text-sm font-semibold leading-6 text-gray-300">Επικοινωνία</a>
   
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="tel:+306984072878">
+          <button type="button" class="inline-flex items-center gap-x-1.5 rounded-md bg-vgreen px-3 py-2 text-sm font-semibold text-black transition-colors duration-300 shadow-sm hover:bg-vgreenhover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            Καλέστε μας 6984072878
+            <svg xmlns="http://www.w3.org/2000/svg" class="-mr-0.5 h-5 w-5 icon icon-tabler icon-tabler-phone" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+          </button>
+        </a>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
     <div class="lg:hidden" role="dialog" aria-modal="true">
       <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div class="fixed inset-0 z-10"></div>
-      <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div x-show="open" class="fixed inset-y-0 right-0 z-10 w-full px-6 py-3 overflow-y-auto bg-neutral-900 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+            <img class="w-auto h-16" src="./media/logo.png" alt="">
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <button type="button" x-show="open" @click="open = false" class="-m-2.5 rounded-md p-2.5 text-white">
             <span class="sr-only">Close menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        <div class="mt-6 flow-root">
+        <div class="flow-root mt-6">
           <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+            <div class="py-6 space-y-2">
+              <a href="#services" @click="open = false" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg">Υπηρεσίες</a>
+              <a href="#statement" @click="open = false" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg">Σκοπός</a>
+              <a href="#ourWork" @click="open = false" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg">Έργα</a>
+              <a href="#costCalculation" @click="open = false" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg">Εκτίμηση κόστους</a>
+              <a href="#whyUs" @click="open = false" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg">Γιατί εμάς</a>
+              <a href="#contact" @click="open = false" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg">Επικοινωνία</a>
             </div>
             <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+              <a href="tel:+306984072878" class="-mx-3  rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-vgreen  text-black">Καλέστε μας 6984072878</a>
             </div>
           </div>
         </div>

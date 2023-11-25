@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#hero-section {
+    background-image: url('../media/hero.jpg');
+	/* background-image: url('https://images.unsplash.com/photo-1652829069862-87874e119527'); */
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+}
+
+html {
+    scroll-behavior: smooth;
+}
