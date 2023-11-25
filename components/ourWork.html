@@ -2,49 +2,123 @@
   <div class="max-w-3xl mx-auto lg:text-center">
     <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Μερικά από τα έργα μας</p>
   </div>
-  <div class="grid grid-cols-1 gap-4 pt-12 pb-24 mx-auto md:grid-cols-4">
-    <div class="grid gap-4">
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-1.jpg" alt="">
+  <div class="flex flex-col gap-4">
+    <div class="grid grid-cols-1 gap-4 pt-12 mx-auto md:grid-cols-4">
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+          <img @click="modalImg('./media/gallery1.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery1.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery2.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery2.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery3.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery3.jpg" alt="">
+        </div>
       </div>
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-2.jpg" alt="">
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery4.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery4.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery5.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery5.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery6.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery6.jpg" alt="">
+        </div>
       </div>
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-3.jpg" alt="">
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery7.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery7.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery8.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery8.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery9.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery9.jpg" alt="">
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery10.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery10.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery11.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery11.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery12.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery12.jpg" alt="">
+        </div>
       </div>
     </div>
-    <div class="grid gap-4">
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-4.jpg" alt="">
+    <div class="grid grid-cols-1 gap-4 mx-auto md:grid-cols-4">
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+          <img @click="modalImg('./media/gallery13.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery13.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery14.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery14.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery15.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery15.jpg" alt="">
+        </div>
       </div>
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-5.jpg" alt="">
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery16.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery16.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery17.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery17.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery18.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery18.jpg" alt="">
+        </div>
       </div>
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-6.jpg" alt="">
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery19.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery19.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery20.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery20.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery21.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery21.jpg" alt="">
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery22.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery22.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery23.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery23.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery24.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery24.jpg" alt="">
+        </div>
       </div>
     </div>
-    <div class="grid gap-4">
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-7.jpg" alt="">
+    <div class="grid grid-cols-1 gap-4 pb-24 mx-auto md:grid-cols-3">
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+          <img @click="modalImg('./media/gallery25.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery25.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery26.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery26.jpg" alt="">
+        </div>
       </div>
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-8.jpg" alt="">
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery27.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery27.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery28.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery28.jpg" alt="">
+        </div>
       </div>
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-9.jpg" alt="">
-      </div>
-    </div>
-    <div class="grid gap-4">
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-10.jpg" alt="">
-      </div>
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-11.jpg" alt="">
-      </div>
-      <div class="object-contain h-full max-h-screen overflow-hidden">
-          <img class="object-cover w-full h-full rounded-lg max-h-fit" src="./media/img-12.jpg" alt="">
+      <div class="grid gap-4">
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery29.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery29.jpg" alt="">
+        </div>
+        <div class="object-contain h-full max-h-screen overflow-hidden">
+            <img @click="modalImg('./media/gallery30.jpg'); modal = true" class="object-cover w-full h-full rounded-lg cursor-pointer max-h-fit" src="./media/gallery30.jpg" alt="">
+        </div>
       </div>
     </div>
   </div>

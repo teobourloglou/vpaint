@@ -12,6 +12,6 @@ const fetchComponents = (components) => {
       .then((data) => {
         const element = document.getElementById(elementId);
         element ? (element.innerHTML = data) : "";
-      });
+      })
   });
 };

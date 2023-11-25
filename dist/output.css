@@ -653,12 +653,24 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-6 {
+  top: 1.5rem;
 }
 
 .isolate {
@@ -903,16 +915,16 @@ video {
   height: 20rem;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-full {
   height: 100%;
 }
 
 .h-screen {
   height: 100vh;
+}
+
+.max-h-\[600px\] {
+  max-height: 600px;
 }
 
 .max-h-fit {
@@ -924,8 +936,20 @@ video {
   max-height: 100vh;
 }
 
-.max-h-full {
-  max-height: 100%;
+.max-h-\[80\%\] {
+  max-height: 80%;
+}
+
+.max-h-\[100px\] {
+  max-height: 100px;
+}
+
+.max-h-\[1000px\] {
+  max-height: 1000px;
+}
+
+.max-h-\[800px\] {
+  max-height: 800px;
 }
 
 .w-28 {
@@ -948,6 +972,10 @@ video {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -960,8 +988,20 @@ video {
   max-width: 80rem;
 }
 
+.max-w-\[800px\] {
+  max-width: 800px;
+}
+
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
+.max-w-\[1000px\] {
+  max-width: 1000px;
 }
 
 .flex-auto {
@@ -1030,6 +1070,10 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .touch-auto {
@@ -2018,6 +2062,10 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-black\/70 {
+  background-color: rgb(0 0 0 / 0.7);
+}
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -2054,6 +2102,11 @@ video {
 
 .bg-white\/10 {
   background-color: rgb(255 255 255 / 0.1);
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-t {
@@ -2371,6 +2424,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-base {
@@ -3019,8 +3077,24 @@ html {
     display: flex;
   }
 
+  .sm\:max-h-\[80\%\] {
+    max-height: 80%;
+  }
+
   .sm\:max-w-sm {
     max-width: 24rem;
+  }
+
+  .sm\:max-w-\[800px\] {
+    max-width: 800px;
+  }
+
+  .sm\:max-w-\[\[800px\]\] {
+    max-width: [800px];
+  }
+
+  .sm\:max-w-\[80\%\] {
+    max-width: 80%;
   }
 
   .sm\:flex-shrink-0 {
@@ -3117,6 +3191,10 @@ html {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:pl-16 {
